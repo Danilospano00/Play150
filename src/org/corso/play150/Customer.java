@@ -8,6 +8,7 @@ public class Customer {
     private String partitaIvaAzienda;
 
     public Customer(Contatto contatto, String nomeAzienda, String partitaIvaAzienda) {
+        this.contatto = contatto;
         this.nomeAzienda = nomeAzienda;
         this.partitaIvaAzienda = partitaIvaAzienda;
     }

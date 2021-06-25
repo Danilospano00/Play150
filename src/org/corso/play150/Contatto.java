@@ -15,6 +15,8 @@ public class Contatto {
         this.email = email;
     }
 
+
+
    
     public String getNome() {
         return nome;
