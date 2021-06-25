@@ -21,12 +21,10 @@ public class CRMDatabase {
         if(nomeAzienda!=null && partitaIvaAzienda!=null){
         Contatto contatto = new Contatto(nome, cognome, nrTelefono, email);
         Customer customer = new Customer(contatto, nomeAzienda, partitaIvaAzienda);
+        aggiungiContatto(contatto);
         aggiungiCustomer(customer);
         }
-        else if(nomeAzienda!=null && partitaIvaAzienda!=null){
-            throw new DatiInseritiErrati();
-        }
-        else{
+        else if(nomeAzienda==null && partitaIvaAzienda==null){
             Contatto contatto = new Contatto(nome, cognome, nrTelefono, email);
             aggiungiContatto(contatto);
         }
